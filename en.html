@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chloé Chabbert · Data analyst &amp; web designer</title>
+  <meta name="description" content="Chloé Chabbert, data analyst and BI engineer in western France: Power BI and Qlik dashboards, SQL data modelling, data project management. Web and graphic designer since 2014.">
+  <meta property="og:title" content="Chloé Chabbert · Data analyst &amp; web designer">
+  <meta property="og:description" content="I turn company data into clear indicators people can act on, and I have been designing websites and visual identities since 2014.">
+  <meta property="og:image" content="assets/chloe.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_GB">
+  <link rel="alternate" hreflang="fr" href="index.html">
+  <link rel="alternate" hreflang="en" href="en.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23141110'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='800' font-size='30' fill='%23F27A2A'%3ECC%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,400;0,500;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body data-view="all">
+  <a class="skip" href="#career">Skip to career</a>
+
+  <!-- ============ 1. Home + about: reading column + fixed photograph ============ -->
+  <header class="bar">
+    <a class="wordmark" href="#top" aria-label="Chloé Chabbert, back to top">Chloé Chabbert</a>
+    <nav class="links" aria-label="Sections">
+      <a href="#career">Career</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#studio">Studio</a>
+      <a href="#travels">Travels</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="lang" href="index.html" hreflang="fr" lang="fr" aria-label="Version française">FR</a>
+    <a class="btn btn--small" href="assets/CV_Chloe_Chabbert.pdf" download>CV PDF</a>
+  </header>
+
+  <div class="split">
+    <main class="read" id="top">
+
+      <section class="hero" data-scene="herbiers" aria-labelledby="title">
+        <h1 id="title" class="name reveal">
+          <span class="name__first">Chloé</span>
+          <span class="name__last">Chabbert</span>
+        </h1>
+        <p class="role reveal">Data analyst in western France, and also <span class="typed" data-words="BI engineer|BI project manager|web designer|graphic designer">BI engineer</span><span class="caret" aria-hidden="true"></span></p>
+        <p class="lead reveal">I turn company data into clear indicators people can act on, and I have been designing websites and visual identities since 2014.</p>
+        <div class="actions reveal">
+          <a class="btn" href="mailto:chloecha14@gmail.com?subject=Hello%20from%20your%20portfolio">Get in touch</a>
+          <a class="textlink" href="assets/CV_Chloe_Chabbert.pdf" download>Download my CV (in French)</a>
+        </div>
+
+        <div class="slicer-home reveal" id="slicer-home">
+          <p class="slicer-label" id="slicer-label">Filter my profile, just like in a report:</p>
+          <div class="slicer" role="group" aria-labelledby="slicer-label">
+            <button type="button" data-set-view="all" aria-pressed="true">All</button>
+            <button type="button" data-set-view="data" aria-pressed="false">Data &amp; BI</button>
+            <button type="button" data-set-view="web" aria-pressed="false">Web &amp; design</button>
+          </div>
+          <pre class="query" aria-live="polite"><code id="query">SELECT * FROM career;</code></pre>
+        </div>
+      </section>
+
+      <section class="about" id="about" data-scene="plage" aria-labelledby="about-title">
+        <h2 id="about-title" class="reveal">Hi, I'm Chloé</h2>
+        <div class="letter">
+          <img class="letter__face reveal" src="assets/chloe.jpg" width="605" height="807" alt="" loading="lazy">
+          <p class="reveal">I grew up in Tahiti, where I took my baccalaureate at Lycée Paul Gauguin, before crossing the world to study business computing in Bordeaux. Today I live and work in Vendée, on the Atlantic coast of France.</p>
+          <p class="reveal">My job is to make data useful. I model, transform and shape a company's numbers so that business teams know where they stand, and what to decide.</p>
+          <p class="reveal">Since 2014 I have had a second workshop: I create websites, logos and videos for freelancers and companies in France and French Polynesia. That is where I learned that <mark>a dashboard is also a piece of design</mark>.</p>
+          <p class="reveal">I work in agile teams, close to the business, with one fixed idea: an indicator should make sense in five seconds.</p>
+          <p class="sign reveal">Chloé Chabbert<span>Data analyst · BI engineer · Project manager</span></p>
+        </div>
+      </section>
+    </main>
+
+    <aside class="stage" aria-label="Photograph">
+      <div class="stage__frame">
+        <figure class="scene is-on" data-scene-img="herbiers">
+          <img src="assets/accueil-code.jpg" width="1920" height="1280" alt="A laptop open on a code editor" fetchpriority="high">
+          <figcaption><span>Les Herbiers, Vendée</span><span>Data Engineer at K-LINE</span></figcaption>
+        </figure>
+        <figure class="scene" data-scene-img="plage">
+          <img src="assets/tahiti.jpg" width="800" height="528" alt="Aerial view of a lagoon in Tahiti, lined with coconut palms and overwater bungalows" loading="lazy">
+          <figcaption><span>Tahiti, French Polynesia</span><span>Where I grew up</span></figcaption>
+        </figure>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ============ 2. In numbers: full-width mosaic driven by the filter ============ -->
+  <section class="stats" id="numbers" aria-labelledby="numbers-title">
+    <h2 id="numbers-title" class="stats__title reveal">My career in numbers</h2>
+    <div class="mosaic">
+      <div class="gantt">
+        <p class="gantt__title">Twelve years of web design, running alongside my studies and then my data career.</p>
+        <p class="gantt__legend"><span><i class="key key--data"></i>Data &amp; BI</span><span><i class="key key--web"></i>Web &amp; design</span><span><i class="key key--edu"></i>Education</span></p>
+        <p class="gantt__axis" aria-hidden="true"><span style="--y:2014">2014</span><span style="--y:2017">2017</span><span style="--y:2020">2020</span><span style="--y:2023">2023</span><span style="--y:2026">2026</span></p>
+        <ol class="gantt__rows">
+          <li class="grow" data-gcat="web" style="--s:2014;--e:2026.85"><a href="#exp-web"><span class="grow__label">Freelance web and graphic design <span>2014 – present</span></span><span class="grow__track"><span class="grow__bar grow__bar--web"></span></span></a></li>
+          <li class="grow" data-gcat="edu" style="--s:2016.67;--e:2019.5"><a href="#edu-bac"><span class="grow__label">Baccalaureate, Papeete <span>2016 – 2019</span></span><span class="grow__track"><span class="grow__bar grow__bar--edu"></span></span></a></li>
+          <li class="grow" data-gcat="edu" style="--s:2019.67;--e:2023.5"><a href="#edu-licence"><span class="grow__label">Bachelor’s degree, Bordeaux <span>2019 – 2023</span></span><span class="grow__track"><span class="grow__bar grow__bar--edu"></span></span></a></li>
+          <li class="grow" data-gcat="data" style="--s:2023.25;--e:2023.5"><a href="#exp-kpc"><span class="grow__label">Internship at KPC Sud Ouest <span>Apr – Jun 2023</span></span><span class="grow__track"><span class="grow__bar grow__bar--data"></span></span></a></li>
+          <li class="grow" data-gcat="data" style="--s:2023.67;--e:2025.7"><a href="#exp-puydufou"><span class="grow__label">Work-study Master’s, Puy du Fou <span>2023 – 2025</span></span><span class="grow__track"><span class="grow__bar grow__bar--data"></span></span></a></li>
+          <li class="grow" data-gcat="data" style="--s:2025.75;--e:2026.85"><a href="#exp-kline"><span class="grow__label">K-LINE <span>Oct 2025 – present</span></span><span class="grow__track"><span class="grow__bar grow__bar--data"></span></span></a></li>
+        </ol>
+      </div>
+      <div class="tile tile--a" aria-live="polite">
+        <p class="tile__fig" data-kpi="a-fig">3.5 years</p>
+        <p class="tile__cap" data-kpi="a-cap">of BI in industry, from internship to Data Engineer</p>
+      </div>
+      <div class="tile tile--b" aria-live="polite">
+        <p class="tile__fig" data-kpi="b-fig">12 years</p>
+        <p class="tile__cap" data-kpi="b-cap">of websites, logos and videos, since 2014</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. Career, projects, skills: second fixed stage ============ -->
+  <div class="split split--b">
+    <div class="read">
+      <section class="timeline" id="career" aria-labelledby="career-title">
+        <h2 id="career-title" class="reveal">Career</h2>
+
+        <h3 class="timeline__sub reveal">Experience</h3>
+        <ol class="entries">
+          <li class="entry" id="exp-kline" data-cat="data" data-scene="kline">
+            <span class="entry__logo reveal"><img src="assets/logos/k-line.png" width="554" height="202" alt="K-LINE logo" loading="lazy"></span>
+            <p class="entry__date reveal">Oct 2025 – present</p>
+            <h4 class="entry__title reveal">Data Engineer &amp; Analyst</h4>
+            <p class="entry__org reveal">K-LINE · Les Herbiers</p>
+            <ul class="reveal">
+              <li>Star-schema data modelling, queries and stored procedures in SQL Server.</li>
+              <li>Extracting and transforming data from the Dynamics AX 2012 ERP and Dataverse (D365).</li>
+              <li>Building, optimising and maintaining Power BI dashboards (DAX, Power Query).</li>
+            </ul>
+          </li>
+          <li class="entry" id="exp-puydufou" data-cat="data" data-scene="puydufou">
+            <span class="entry__logo reveal"><img src="assets/logos/puy-du-fou.png" width="240" height="61" alt="Puy du Fou logo" loading="lazy"></span>
+            <p class="entry__date reveal">Sep 2023 – Sep 2025</p>
+            <h4 class="entry__title reveal">Data project manager, work-study</h4>
+            <p class="entry__org reveal">Puy du Fou · Les Épesses</p>
+            <ul class="reveal">
+              <li>Led the migration of SSRS reports to Qlik, from design to deployment.</li>
+              <li>Collected, transformed and analysed data; redesigned applications with business teams.</li>
+              <li>Assessed and implemented AWS QuickSight to simplify KPI tracking.</li>
+            </ul>
+          </li>
+          <li class="entry" id="exp-kpc" data-cat="data" data-scene="bordeaux">
+            <span class="entry__logo reveal"><img src="assets/logos/kpc.png" width="122" height="59" alt="KPC logo" loading="lazy"></span>
+            <p class="entry__date reveal">Apr – Jun 2023</p>
+            <h4 class="entry__title reveal">Data consultant, internship</h4>
+            <p class="entry__org reveal">KPC Sud Ouest · Bordeaux</p>
+            <ul class="reveal">
+              <li>Data analysis and modelling with Talend and Snowflake.</li>
+              <li>Built BI reports in Power BI and Qlik Sense.</li>
+              <li>Took part in managing BI projects with clients.</li>
+            </ul>
+          </li>
+          <li class="entry" id="exp-web" data-cat="web" data-scene="plage">
+            <p class="entry__date reveal">2014 – present</p>
+            <h4 class="entry__title reveal">Web developer and graphic designer</h4>
+            <p class="entry__org reveal">Freelancers and companies · France and French Polynesia</p>
+            <ul class="reveal">
+              <li>Designed and built websites for professionals and individuals.</li>
+              <li>Created logos, visual identities and videos.</li>
+            </ul>
+          </li>
+        </ol>
+
+        <h3 class="timeline__sub reveal">Education</h3>
+        <ol class="entries">
+          <li class="entry" id="edu-master" data-cat="data" data-scene="diplome">
+            <p class="entry__date reveal">Completed 2025</p>
+            <h4 class="entry__title reveal">Master's degree, MIAGE</h4>
+            <p class="entry__org reveal">University of Bordeaux · Talence</p>
+            <p class="entry__text reveal">Business intelligence, project management, data engineering, enterprise architecture.</p>
+          </li>
+          <li class="entry" id="edu-licence" data-cat="data" data-scene="diplome">
+            <p class="entry__date reveal">2019 – 2023</p>
+            <h4 class="entry__title reveal">Bachelor's degree in business computing</h4>
+            <p class="entry__org reveal">University of Bordeaux · Talence</p>
+            <p class="entry__text reveal">Computer methods applied to business management.</p>
+          </li>
+          <li class="entry" id="edu-bac" data-cat="all" data-scene="plage">
+            <p class="entry__date reveal">2016 – 2019</p>
+            <h4 class="entry__title reveal">French baccalaureate in science, European section</h4>
+            <p class="entry__org reveal">Lycée Paul Gauguin · Papeete, Tahiti</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="work" id="projects" data-scene="kline" aria-labelledby="projects-title">
+        <h2 id="projects-title" class="reveal">Selected projects</h2>
+        <p class="work__intro reveal">My employers' data stays with them, so I describe the approach rather than show the screens. Open a row to read the case study.</p>
+        <div class="ledger">
+          <details class="row" data-cat="data">
+            <summary><span class="row__name">SSRS to Qlik Sense migration</span><span class="row__kind">BI project management</span><span class="row__year">2023–25</span></summary>
+            <div class="row__body">
+              <p><strong>Context.</strong> At Puy du Fou, the legacy reports ran on SSRS: static, rarely read and hard to evolve.</p>
+              <p><strong>What I did.</strong> Report inventory with the business teams, prioritisation, Qlik app design, testing and deployment, in agile sprints.</p>
+              <p><strong>Tools.</strong> SSRS, Qlik Sense, SQL, Azure DevOps.</p>
+            </div>
+          </details>
+          <details class="row" data-cat="data">
+            <summary><span class="row__name">AWS QuickSight study</span><span class="row__kind">Assessment and rollout</span><span class="row__year">2023–25</span></summary>
+            <div class="row__body">
+              <p><strong>Context.</strong> Make key indicators easier for teams to reach, without multiplying reports.</p>
+              <p><strong>What I did.</strong> Comparative study, rollout of the solution and the first KPI dashboards.</p>
+              <p><strong>Tools.</strong> AWS QuickSight.</p>
+            </div>
+          </details>
+          <details class="row" data-cat="data">
+            <summary><span class="row__name">Star-schema data warehouse</span><span class="row__kind">Data engineering</span><span class="row__year">2025–</span></summary>
+            <div class="row__body">
+              <p><strong>Context.</strong> At K-LINE, data lives in the Dynamics AX 2012 ERP and in Dataverse (D365).</p>
+              <p><strong>What I did.</strong> Extraction, transformation and star-schema modelling; queries and stored procedures that feed the reports.</p>
+              <p><strong>Tools.</strong> SQL Server (SSMS), Dynamics AX 2012, Dataverse.</p>
+            </div>
+          </details>
+          <details class="row" data-cat="data">
+            <summary><span class="row__name">Power BI dashboards</span><span class="row__kind">Data visualisation</span><span class="row__year">2025–</span></summary>
+            <div class="row__body">
+              <p><strong>Context.</strong> Teams who need to see their numbers fast, and right.</p>
+              <p><strong>What I did.</strong> Building, optimising and maintaining reports: DAX measures, Power Query preparation, layouts designed for reading.</p>
+              <p><strong>Tools.</strong> Power BI, DAX, Power Query.</p>
+            </div>
+          </details>
+          <details class="row" data-cat="data">
+            <summary><span class="row__name">BI reports for clients</span><span class="row__kind">Data consulting</span><span class="row__year">2023</span></summary>
+            <div class="row__body">
+              <p><strong>Context.</strong> Consulting internship at KPC Sud Ouest, in Bordeaux.</p>
+              <p><strong>What I did.</strong> Modelling in Talend and Snowflake, reports in Power BI and Qlik Sense, discussions with clients about their needs.</p>
+              <p><strong>Tools.</strong> Talend, Snowflake, Power BI, Qlik Sense.</p>
+            </div>
+          </details>
+          <details class="row" data-cat="web">
+            <summary><span class="row__name">Websites for freelancers</span><span class="row__kind">Web design and development</span><span class="row__year">2014–</span></summary>
+            <div class="row__body">
+              <p><strong>Context.</strong> Professionals and individuals in France and Polynesia who needed a presence online.</p>
+              <p><strong>What I did.</strong> Mock-ups, design, development and launch of their websites.</p>
+            </div>
+          </details>
+          <details class="row" data-cat="web">
+            <summary><span class="row__name">Posters and event visuals</span><span class="row__kind">Graphic design</span><span class="row__year">2020–21</span></summary>
+            <div class="row__body">
+              <p><strong>What I did.</strong> Posters, banners and weekly programmes for club nights, a board-sports contest and local businesses in Tahiti.</p>
+              <p><strong>See them.</strong> <a href="#studio">In the studio, further down</a>.</p>
+            </div>
+          </details>
+          <details class="row" data-cat="web">
+            <summary><span class="row__name">Logos and visual identities</span><span class="row__kind">Graphic design</span><span class="row__year">2014–</span></summary>
+            <div class="row__body">
+              <p><strong>What I did.</strong> Logos, brand guidelines and printed materials for companies and individuals.</p>
+              <p><strong>See them.</strong> <a href="#studio">In the studio, further down</a>.</p>
+            </div>
+          </details>
+          <details class="row" data-cat="web">
+            <summary><span class="row__name">Videos</span><span class="row__kind">Concept and editing</span><span class="row__year">2014–</span></summary>
+            <div class="row__body">
+              <p><strong>What I did.</strong> Concept and editing of videos for clients.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section class="skills" id="skills" data-scene="bordeaux" aria-labelledby="skills-h">
+        <h2 id="skills-h" class="reveal">Skills</h2>
+        <p class="skills__note reveal"><span class="chipkey">In orange</span> the tools I use every day at K-LINE.</p>
+        <div class="bento">
+          <article class="card card--wide reveal" data-cat="data">
+            <h3>Data visualisation and BI</h3>
+            <p>Dashboards built to be read: measures, layout, maintenance.</p>
+            <ul class="chips"><li class="is-daily">Power BI</li><li class="is-daily">DAX</li><li class="is-daily">Power Query</li><li>Qlik Sense</li><li>SSRS</li><li>AWS QuickSight</li></ul>
+          </article>
+          <article class="card reveal" data-cat="data">
+            <h3>Languages and databases</h3>
+            <p>Queries, stored procedures and star-schema models.</p>
+            <ul class="chips"><li class="is-daily">SQL Server (SSMS)</li><li class="is-daily">Star schemas</li><li>Python</li></ul>
+          </article>
+          <article class="card reveal" data-cat="data">
+            <h3>Data engineering</h3>
+            <p>Extracting and transforming data from ERPs and warehouses.</p>
+            <ul class="chips"><li class="is-daily">Dynamics AX 2012</li><li class="is-daily">Dataverse (D365)</li><li>Microsoft Fabric</li><li>Snowflake</li><li>Talend</li></ul>
+          </article>
+          <article class="card reveal" data-cat="data">
+            <h3>Methods and tools</h3>
+            <p>Projects run in sprints, close to the business teams.</p>
+            <ul class="chips"><li>Agile Scrum</li><li>Azure DevOps</li><li>Visual Studio</li></ul>
+          </article>
+          <article class="card reveal" data-cat="web">
+            <h3>Web and graphic design</h3>
+            <p>Websites, logos and videos, from mock-up to launch.</p>
+            <ul class="chips"><li>HTML</li><li>CSS</li><li>Website design</li><li>Logos</li><li>Video</li></ul>
+          </article>
+          <article class="card card--wide reveal" data-cat="all">
+            <h3>Languages</h3>
+            <p>European framework levels, from A1 to C2.</p>
+            <ul class="langs">
+              <li><strong>French</strong><span class="meter" role="img" aria-label="6 out of 6"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span>native</span></li>
+              <li><strong>English</strong><span class="meter" role="img" aria-label="6 out of 6"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span>C2 · TOEIC 935</span></li>
+              <li><strong>Spanish</strong><span class="meter" role="img" aria-label="4 out of 6"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span>B2</span></li>
+              <li><strong>German</strong><span class="meter" role="img" aria-label="2 out of 6"><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i></span><span>A2</span></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <aside class="stage" aria-label="Places along the way">
+      <div class="stage__frame">
+        <figure class="scene is-on" data-scene-img="kline">
+          <img src="assets/les-herbiers.jpg" width="1920" height="1280" alt="The windmill on Mont des Alouettes, in Les Herbiers" loading="lazy">
+          <figcaption><span>Les Herbiers, Vendée</span><span>K-LINE · since 2025</span></figcaption>
+        </figure>
+        <figure class="scene" data-scene-img="puydufou">
+          <img src="assets/2013-sept-le-puy-du-fou-cinescenie.jpg" width="1920" height="1276" alt="Fireworks above the Cinéscénie night show at Puy du Fou" loading="lazy">
+          <figcaption><span>Puy du Fou, Les Épesses</span><span>2023 – 2025 · work-study</span></figcaption>
+        </figure>
+        <figure class="scene" data-scene-img="bordeaux">
+          <img src="assets/bordeaux-place-de-la-bourse-with-tram.jpg" width="1920" height="1285" alt="A tram passing the Place de la Bourse in Bordeaux" loading="lazy">
+          <figcaption><span>Bordeaux</span><span>2019 – 2025 · studies and internship</span></figcaption>
+        </figure>
+        <figure class="scene" data-scene-img="diplome">
+          <img src="assets/diplome.jpg" width="1500" height="2000" alt="Chloé receiving her degree on stage at the MIAGE graduation ceremony in Bordeaux" loading="lazy">
+          <figcaption><span>University of Bordeaux</span><span>MIAGE graduation ceremony</span></figcaption>
+        </figure>
+        <figure class="scene" data-scene-img="plage">
+          <img src="assets/tahiti.jpg" width="800" height="528" alt="Aerial view of a lagoon in Tahiti, lined with coconut palms and overwater bungalows" loading="lazy">
+          <figcaption><span>Tahiti, French Polynesia</span><span>Where it all began</span></figcaption>
+        </figure>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ============ Atelier : les créations, en couleurs ============ -->
+  <section class="atelier" id="studio" data-cat="web" aria-labelledby="studio-h">
+    <div class="atelier__head">
+      <h2 id="studio-h" class="reveal">The studio</h2>
+      <p class="reveal">The rest of this site is orange and black. Here, my work keeps its own colours. Click an image to enlarge it.</p>
+    </div>
+    <div class="strip strip--evt">
+      <div class="strip__head reveal">
+        <h3>Event visuals</h3>
+        <p>Baroof and Sauvage, Tahiti · 2021</p>
+        <div class="strip__nav"><button type="button" data-dir="-1" aria-label="Previous images"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M19 12H6M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg></button><button type="button" data-dir="1" aria-label="Next images"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg></button></div>
+      </div>
+      <ul class="strip__rail" tabindex="0" aria-label="Event visuals">
+        <li><a href="assets/creations/evt-cabaroof-juillet.jpg" data-zoom data-w="1200" data-h="628" data-caption="Cabaroof, 6 July 2021"><img src="assets/creations/thumbs/evt-cabaroof-juillet.jpg" width="900" height="471" alt="Cabaroof, 6 July 2021" loading="lazy"></a></li>
+        <li><a href="assets/creations/evt-yes-we-dance-1.jpg" data-zoom data-w="1200" data-h="628" data-caption="Yes We Dance, 1 to 3 December"><img src="assets/creations/thumbs/evt-yes-we-dance-1.jpg" width="900" height="471" alt="Yes We Dance, 1 to 3 December" loading="lazy"></a></li>
+        <li><a href="assets/creations/evt-sauvage-birthday-1.jpg" data-zoom data-w="1200" data-h="628" data-caption="Sauvage Birthday, 26 and 27 November 2021"><img src="assets/creations/thumbs/evt-sauvage-birthday-1.jpg" width="900" height="471" alt="Sauvage Birthday, 26 and 27 November 2021" loading="lazy"></a></li>
+        <li><a href="assets/creations/evt-halloween-1.jpg" data-zoom data-w="1200" data-h="628" data-caption="Halloween Special, 31 October"><img src="assets/creations/thumbs/evt-halloween-1.jpg" width="900" height="471" alt="Halloween Special, 31 October" loading="lazy"></a></li>
+        <li><a href="assets/creations/evt-programme-juin-1.jpg" data-zoom data-w="1200" data-h="628" data-caption="Weekly programme, early June"><img src="assets/creations/thumbs/evt-programme-juin-1.jpg" width="900" height="471" alt="Weekly programme, early June" loading="lazy"></a></li>
+        <li><a href="assets/creations/evt-cabaroof-aout.jpg" data-zoom data-w="1200" data-h="628" data-caption="Cabaroof, 17 August 2021"><img src="assets/creations/thumbs/evt-cabaroof-aout.jpg" width="900" height="471" alt="Cabaroof, 17 August 2021" loading="lazy"></a></li>
+        <li><a href="assets/creations/evt-yes-we-dance-2.jpg" data-zoom data-w="1200" data-h="628" data-caption="Yes We Dance, 9 to 11 December"><img src="assets/creations/thumbs/evt-yes-we-dance-2.jpg" width="900" height="471" alt="Yes We Dance, 9 to 11 December" loading="lazy"></a></li>
+        <li><a href="assets/creations/evt-nye-2022.jpg" data-zoom data-w="1200" data-h="628" data-caption="NYE 2022, New Year’s Eve party"><img src="assets/creations/thumbs/evt-nye-2022.jpg" width="900" height="471" alt="NYE 2022, New Year’s Eve party" loading="lazy"></a></li>
+        <li><a href="assets/creations/evt-defile-tentation.jpg" data-zoom data-w="1200" data-h="628" data-caption="Défilé Tentation fashion show, 14 December"><img src="assets/creations/thumbs/evt-defile-tentation.jpg" width="900" height="471" alt="Défilé Tentation fashion show, 14 December" loading="lazy"></a></li>
+        <li><a href="assets/creations/evt-electronic-weekend.jpg" data-zoom data-w="1200" data-h="628" data-caption="Electronic Week-end, 4 and 5 December"><img src="assets/creations/thumbs/evt-electronic-weekend.jpg" width="900" height="471" alt="Electronic Week-end, 4 and 5 December" loading="lazy"></a></li>
+        <li><a href="assets/creations/evt-cabaroof-septembre.jpg" data-zoom data-w="1200" data-h="628" data-caption="Cabaroof, 14 September 2021"><img src="assets/creations/thumbs/evt-cabaroof-septembre.jpg" width="900" height="471" alt="Cabaroof, 14 September 2021" loading="lazy"></a></li>
+        <li><a href="assets/creations/evt-yes-we-dance-3.jpg" data-zoom data-w="1200" data-h="628" data-caption="Yes We Dance, 16 to 18 December"><img src="assets/creations/thumbs/evt-yes-we-dance-3.jpg" width="900" height="471" alt="Yes We Dance, 16 to 18 December" loading="lazy"></a></li>
+        <li><a href="assets/creations/evt-mixology.jpg" data-zoom data-w="1200" data-h="628" data-caption="Mixology, 15 July 2021"><img src="assets/creations/thumbs/evt-mixology.jpg" width="900" height="471" alt="Mixology, 15 July 2021" loading="lazy"></a></li>
+        <li><a href="assets/creations/evt-sauvage-birthday-2.jpg" data-zoom data-w="1200" data-h="628" data-caption="Sauvage Birthday, second version"><img src="assets/creations/thumbs/evt-sauvage-birthday-2.jpg" width="900" height="471" alt="Sauvage Birthday, second version" loading="lazy"></a></li>
+        <li><a href="assets/creations/evt-halloween-2.jpg" data-zoom data-w="1200" data-h="628" data-caption="Halloween Special, second version"><img src="assets/creations/thumbs/evt-halloween-2.jpg" width="900" height="471" alt="Halloween Special, second version" loading="lazy"></a></li>
+        <li><a href="assets/creations/evt-thomas-is-back.jpg" data-zoom data-w="1600" data-h="900" data-caption="Thomas is back, 1 July 2021"><img src="assets/creations/thumbs/evt-thomas-is-back.jpg" width="900" height="506" alt="Thomas is back, 1 July 2021" loading="lazy"></a></li>
+        <li><a href="assets/creations/evt-woodstock-pool-party.jpg" data-zoom data-w="1600" data-h="800" data-caption="Woodstock Pool Party, 15 May"><img src="assets/creations/thumbs/evt-woodstock-pool-party.jpg" width="900" height="450" alt="Woodstock Pool Party, 15 May" loading="lazy"></a></li>
+        <li><a href="assets/creations/evt-cabaroof-octobre.jpg" data-zoom data-w="1200" data-h="628" data-caption="Cabaroof, 26 October 2021"><img src="assets/creations/thumbs/evt-cabaroof-octobre.jpg" width="900" height="471" alt="Cabaroof, 26 October 2021" loading="lazy"></a></li>
+        <li><a href="assets/creations/evt-programme-juillet.jpg" data-zoom data-w="1200" data-h="628" data-caption="Weekly programme, July"><img src="assets/creations/thumbs/evt-programme-juillet.jpg" width="900" height="471" alt="Weekly programme, July" loading="lazy"></a></li>
+        <li><a href="assets/creations/evt-programme-aout.jpg" data-zoom data-w="1200" data-h="628" data-caption="Weekly programme, August"><img src="assets/creations/thumbs/evt-programme-aout.jpg" width="900" height="471" alt="Weekly programme, August" loading="lazy"></a></li>
+        <li><a href="assets/creations/evt-programme-juin-2.jpg" data-zoom data-w="1200" data-h="628" data-caption="Weekly programme, Fête de la musique"><img src="assets/creations/thumbs/evt-programme-juin-2.jpg" width="900" height="471" alt="Weekly programme, Fête de la musique" loading="lazy"></a></li>
+        <li><a href="assets/creations/evt-programme-octobre.jpg" data-zoom data-w="1200" data-h="628" data-caption="Weekly programme, late October"><img src="assets/creations/thumbs/evt-programme-octobre.jpg" width="900" height="471" alt="Weekly programme, late October" loading="lazy"></a></li>
+      </ul>
+    </div>
+    <div class="strip strip--aff">
+      <div class="strip__head reveal">
+        <h3>Posters</h3>
+        <p>Tahiti · 2020 – 2021</p>
+        <div class="strip__nav"><button type="button" data-dir="-1" aria-label="Previous images"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M19 12H6M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg></button><button type="button" data-dir="1" aria-label="Next images"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg></button></div>
+      </div>
+      <ul class="strip__rail" tabindex="0" aria-label="Posters">
+        <li><a href="assets/creations/aff-tahiti-ride-contest.jpg" data-zoom data-w="1131" data-h="1600" data-caption="Poster for the 3rd Tahiti Ride Contest, February 2021"><img src="assets/creations/thumbs/aff-tahiti-ride-contest.jpg" width="452" height="640" alt="Poster for the 3rd Tahiti Ride Contest, February 2021" loading="lazy"></a></li>
+        <li><a href="assets/creations/aff-dj-harmelo.jpg" data-zoom data-w="1400" data-h="1400" data-caption="Tahiti Ride Contest: DJ Harmelo announcement"><img src="assets/creations/thumbs/aff-dj-harmelo.jpg" width="640" height="640" alt="Tahiti Ride Contest: DJ Harmelo announcement" loading="lazy"></a></li>
+        <li><a href="assets/creations/aff-hauti-village.jpg" data-zoom data-w="990" data-h="1400" data-caption="Poster for the Ha’uti Village prize draw, 2020 – 2021"><img src="assets/creations/thumbs/aff-hauti-village.jpg" width="453" height="640" alt="Poster for the Ha’uti Village prize draw, 2020 – 2021" loading="lazy"></a></li>
+        <li><a href="assets/creations/aff-cours-informatique.jpg" data-zoom data-w="1089" data-h="1400" data-caption="Poster for computer classes, Les Cours Benoit"><img src="assets/creations/thumbs/aff-cours-informatique.jpg" width="498" height="640" alt="Poster for computer classes, Les Cours Benoit" loading="lazy"></a></li>
+        <li><a href="assets/creations/aff-angel-vs-demon.jpg" data-zoom data-w="600" data-h="822" data-caption="Poster for the Angel vs Demon party"><img src="assets/creations/thumbs/aff-angel-vs-demon.jpg" width="467" height="640" alt="Poster for the Angel vs Demon party" loading="lazy"></a></li>
+      </ul>
+    </div>
+    <div class="strip strip--logo">
+      <div class="strip__head reveal">
+        <h3>Logos</h3>
+        <p>Identities for brands and associations</p>
+        <div class="strip__nav"><button type="button" data-dir="-1" aria-label="Previous images"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M19 12H6M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg></button><button type="button" data-dir="1" aria-label="Next images"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg></button></div>
+      </div>
+      <ul class="strip__rail" tabindex="0" aria-label="Logos">
+        <li><a href="assets/creations/logo-vibsonar.jpg" data-zoom data-w="1600" data-h="1600" data-caption="Vibsonar logo"><img src="assets/creations/thumbs/logo-vibsonar.jpg" width="640" height="640" alt="Vibsonar logo" loading="lazy"></a></li>
+        <li><a href="assets/creations/logo-entre-deux-pawz.jpg" data-zoom data-w="500" data-h="500" data-caption="Entre deux Paw’z logo, dog and cat boarding and breeding"><img src="assets/creations/thumbs/logo-entre-deux-pawz.jpg" width="500" height="500" alt="Entre deux Paw’z logo, dog and cat boarding and breeding" loading="lazy"></a></li>
+        <li><a href="assets/creations/logo-nature-dart.jpg" data-zoom data-w="1334" data-h="750" data-caption="Nature d’Art logo"><img src="assets/creations/thumbs/logo-nature-dart.jpg" width="900" height="506" alt="Nature d’Art logo" loading="lazy"></a></li>
+        <li><a href="assets/creations/logo-bsm.jpg" data-zoom data-w="800" data-h="800" data-caption="BSM logo"><img src="assets/creations/thumbs/logo-bsm.jpg" width="640" height="640" alt="BSM logo" loading="lazy"></a></li>
+        <li><a href="assets/creations/logo-sazy.jpg" data-zoom data-w="1600" data-h="900" data-caption="Sazy logo, a lion holding a rose"><img src="assets/creations/thumbs/logo-sazy.jpg" width="900" height="506" alt="Sazy logo, a lion holding a rose" loading="lazy"></a></li>
+        <li><a href="assets/creations/logo-gafaire-au-fenua.jpg" data-zoom data-w="1400" data-h="1050" data-caption="GA’Faire @u Fenua logo"><img src="assets/creations/thumbs/logo-gafaire-au-fenua.jpg" width="853" height="640" alt="GA’Faire @u Fenua logo" loading="lazy"></a></li>
+      </ul>
+    </div>
+    <div class="strip strip--app">
+      <div class="strip__head reveal">
+        <h3>Mobile app</h3>
+        <p>CLAP, an events app · 2022</p>
+        <div class="strip__nav"><button type="button" data-dir="-1" aria-label="Previous images"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M19 12H6M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg></button><button type="button" data-dir="1" aria-label="Next images"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg></button></div>
+      </div>
+      <ul class="strip__rail" tabindex="0" aria-label="Mobile app">
+        <li><a href="assets/creations/app-clap-accueil.jpg" data-zoom data-w="739" data-h="1600" data-caption="CLAP app: home screen with featured events"><img src="assets/creations/thumbs/app-clap-accueil.jpg" width="296" height="640" alt="CLAP app: home screen with featured events" loading="lazy"></a></li>
+        <li><a href="assets/creations/app-clap-carte.jpg" data-zoom data-w="739" data-h="1600" data-caption="CLAP app: map of events in Bordeaux"><img src="assets/creations/thumbs/app-clap-carte.jpg" width="296" height="640" alt="CLAP app: map of events in Bordeaux" loading="lazy"></a></li>
+        <li><a href="assets/creations/app-clap-agenda.jpg" data-zoom data-w="739" data-h="1600" data-caption="CLAP app: my events calendar"><img src="assets/creations/thumbs/app-clap-agenda.jpg" width="296" height="640" alt="CLAP app: my events calendar" loading="lazy"></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ Voyages : la carte ============ -->
+  <section class="travel" id="travels" aria-labelledby="travels-h">
+    <div class="travel__head">
+      <h2 id="travels-h" class="reveal">Ten countries, five continents</h2>
+      <p class="reveal">Three language stays, each ending with a certificate, and a taste for seeing what is elsewhere. Tap a pin to see the cities.</p>
+    </div>
+    <div class="travel__grid reveal">
+      <div class="map map--world"><div class="map__inner">
+        <img src="assets/monde.svg" width="1000" height="378" alt="World map: the countries I have visited are in orange" loading="lazy">
+        <span class="map__zone" aria-hidden="true"></span>
+          <button type="button" class="pin" data-place="us" data-label="United States" aria-label="United States" style="--x:22.22%;--y:28.67%"></button>
+          <button type="button" class="pin" data-place="pf" data-label="French Polynesia" aria-label="French Polynesia" style="--x:8.49%;--y:70.33%"></button>
+          <button type="button" class="pin" data-place="nz" data-label="New Zealand" aria-label="New Zealand" style="--x:98.56%;--y:87.72%"></button>
+          <button type="button" class="pin" data-place="au" data-label="Australia" aria-label="Australia" style="--x:90.56%;--y:80.14%"></button>
+          <button type="button" class="pin" data-place="jp" data-label="Japan" aria-label="Japan" style="--x:88.33%;--y:31.17%"></button>
+          <button type="button" class="pin pin--school" data-place="sd" data-label="San Diego, California" aria-label="San Diego, California" style="--x:17.46%;--y:33.29%"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4 1.5 9.5 12 15l8-4.2V16h2V9.5L12 4Z" fill="currentColor"/><path d="M6 13.4V17c1.6 1.5 3.7 2.2 6 2.2s4.400-.7 6-2.200v-3.600L12 16.600 6 13.400Z" fill="currentColor"/></svg></button>
+      </div></div>
+      <div class="travel__side">
+        <figure class="map map--europe"><div class="map__inner">
+          <img src="assets/monde.svg#svgView(viewBox(466.7,61.1,88.9,72.2))" width="640" height="520" alt="Map of Western Europe and Tunisia" loading="lazy">
+          <button type="button" class="pin" data-place="es" data-label="Spain" aria-label="Spain" style="--x:25.94%;--y:60.00%"></button>
+          <button type="button" class="pin" data-place="pt" data-label="Portugal" aria-label="Portugal" style="--x:11.88%;--y:63.08%"></button>
+          <button type="button" class="pin" data-place="it" data-label="Italy" aria-label="Italy" style="--x:76.25%;--y:50.38%"></button>
+          <button type="button" class="pin" data-place="gb" data-label="Great Britain" aria-label="Great Britain" style="--x:37.19%;--y:17.31%"></button>
+          <button type="button" class="pin" data-place="tn" data-label="Tunisia" aria-label="Tunisia" style="--x:69.38%;--y:73.85%"></button>
+          <button type="button" class="pin pin--school" data-place="bcn" data-label="Barcelona, Spain" aria-label="Barcelona, Spain" style="--x:44.28%;--y:56.19%"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4 1.5 9.5 12 15l8-4.2V16h2V9.5L12 4Z" fill="currentColor"/><path d="M6 13.4V17c1.6 1.5 3.7 2.2 6 2.2s4.400-.7 6-2.200v-3.600L12 16.600 6 13.400Z" fill="currentColor"/></svg></button>
+          <button type="button" class="pin pin--school" data-place="mlg" data-label="Malaga, Spain" aria-label="Malaga, Spain" style="--x:23.69%;--y:74.15%"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4 1.5 9.5 12 15l8-4.2V16h2V9.5L12 4Z" fill="currentColor"/><path d="M6 13.4V17c1.6 1.5 3.7 2.2 6 2.2s4.400-.7 6-2.200v-3.600L12 16.600 6 13.400Z" fill="currentColor"/></svg></button>
+          </div><figcaption>Europe and Tunisia, enlarged</figcaption>
+        </figure>
+        <p class="travel__legend"><span><i class="pin pin--key"></i>Country visited</span><span><i class="pin pin--school pin--key"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 4 1.5 9.5 12 15l8-4.2V16h2V9.5L12 4Z" fill="currentColor"/><path d="M6 13.4V17c1.6 1.5 3.7 2.2 6 2.2s4.400-.7 6-2.200v-3.600L12 16.600 6 13.400Z" fill="currentColor"/></svg></i>Language stay with certificate</span></p>
+      </div>
+    </div>
+    <div class="travel__lists">
+      <div class="reveal">
+        <h3>Language stays</h3>
+        <ul class="places places--school">
+          <li data-place="sd" tabindex="0"><strong>San Diego, California</strong><span>English · level C2+</span></li>
+          <li data-place="bcn" tabindex="0"><strong>Barcelona, Spain</strong><span>Spanish · level B1</span></li>
+          <li data-place="mlg" tabindex="0"><strong>Malaga, Spain</strong><span>Spanish · level B2</span></li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <h3>Countries visited</h3>
+        <ul class="places places--cols">
+          <li data-place="us" tabindex="0"><strong>United States</strong><span>Los Angeles, San Diego, Las Vegas, San Francisco, Cannonville, Bryce Canyon, Monument Valley, Miami, Orlando</span></li>
+          <li data-place="pf" tabindex="0"><strong>French Polynesia</strong><span>Tahiti, where I grew up</span></li>
+          <li data-place="nz" tabindex="0"><strong>New Zealand</strong><span>Auckland, Napier, Wellington, Christchurch, Queenstown, Fox Glacier</span></li>
+          <li data-place="au" tabindex="0"><strong>Australia</strong><span>Brisbane, Gold Coast, Sydney, Canberra, Albury, Melbourne, Port Campbell</span></li>
+          <li data-place="jp" tabindex="0"><strong>Japan</strong><span>Tokyo, Osaka, Hiroshima, Kyoto, Nara</span></li>
+          <li data-place="es" tabindex="0"><strong>Spain</strong><span>Barcelona, Madrid, Malaga</span></li>
+          <li data-place="pt" tabindex="0"><strong>Portugal</strong><span>Porto, Lisbon, Faro, Albufeira</span></li>
+          <li data-place="it" tabindex="0"><strong>Italy</strong><span>Rome, Florence, Venice</span></li>
+          <li data-place="gb" tabindex="0"><strong>Great Britain</strong><span>London</span></li>
+          <li data-place="tn" tabindex="0"><strong>Tunisia</strong><span>Tunis</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Contact ============ -->
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="contact__lead">
+      <h2 id="contact-title" class="reveal">Let's work together</h2>
+      <p class="reveal">A data project, a website or a poster: write to me, I reply in English, French or Spanish.</p>
+      <a class="btn reveal" href="mailto:chloecha14@gmail.com?subject=Hello%20from%20your%20portfolio">Email me</a>
+    </div>
+    <dl class="contact__list reveal">
+      <div><dt>Email</dt><dd><a href="mailto:chloecha14@gmail.com">chloecha14@gmail.com</a></dd></div>
+      <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/chloechabbert/?locale=en-US" rel="noopener" target="_blank">View my profile</a></dd></div>
+      <div><dt>Where</dt><dd>Vendée, France</dd></div>
+      <div><dt>Languages</dt><dd>Français · English · Español</dd></div>
+    </dl>
+  </section>
+
+  <!-- ============ 5. Footer ============ -->
+  <footer class="foot">
+    <div class="foot__photo">
+      <img src="assets/tahiti.jpg" width="800" height="528" alt="" loading="lazy">
+    </div>
+    <div class="foot__menu">
+      <p class="foot__mark">Chloé Chabbert</p>
+      <nav aria-label="Footer">
+        <a href="#top">Home</a>
+        <a href="#career">Career</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#studio">Studio</a>
+        <a href="#travels">Travels</a>
+        <a href="#contact">Contact</a>
+        <a href="index.html" hreflang="fr" lang="fr">Version française</a>
+      </nav>
+      <div class="foot__blocks">
+        <p>Data analyst and BI engineer<br>Web and graphic designer</p>
+        <p><a href="mailto:chloecha14@gmail.com">chloecha14@gmail.com</a><br><a href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a></p>
+      </div>
+      <p class="foot__legal">© 2026 Chloé Chabbert. Photographs: <a href="https://commons.wikimedia.org/w/index.php?curid=8663462">Phillip Maiwald, Bordeaux (CC BY-SA 3.0)</a>, via Wikimedia Commons, shown in duotone.</p>
+    </div>
+  </footer>
+
+  <!-- Floating filter, shown once the home screen has scrolled away -->
+  <div class="slicer-float" id="slicer-float" aria-hidden="true">
+    <div class="slicer" role="group" aria-label="Filter my profile">
+      <button type="button" data-set-view="all" aria-pressed="true" tabindex="-1">All</button>
+      <button type="button" data-set-view="data" aria-pressed="false" tabindex="-1">Data &amp; BI</button>
+      <button type="button" data-set-view="web" aria-pressed="false" tabindex="-1">Web &amp; design</button>
+    </div>
+  </div>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Enlarged image">
+    <button type="button" class="lightbox__close" data-lb="close" aria-label="Close"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg></button>
+    <button type="button" class="lightbox__nav lightbox__nav--prev" data-lb="prev" aria-label="Previous image"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M19 12H6M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg></button>
+    <figure><img id="lightbox-img" alt=""><figcaption id="lightbox-cap"></figcaption></figure>
+    <button type="button" class="lightbox__nav lightbox__nav--next" data-lb="next" aria-label="Next image"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg></button>
+  </dialog>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
