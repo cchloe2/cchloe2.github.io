@@ -218,7 +218,19 @@
     });
   }
 
-  /* ---------- 8. Apparition des éléments, en cascade ---------- */
+  /* ---------- 8. Menu latéral ---------- */
+  const drawer = document.getElementById('drawer'), menuBtn = document.getElementById('menu-btn');
+  if (drawer && menuBtn && typeof drawer.showModal === 'function') {
+    menuBtn.addEventListener('click', () => drawer.showModal());
+    drawer.addEventListener('click', (e) => {
+      if (e.target === drawer || e.target.closest('[data-close]') || e.target.closest('.drawer__nav a')) drawer.close();
+    });
+    drawer.addEventListener('close', () => menuBtn.focus({ preventScroll: true }));
+    const bar = document.querySelector('.bar');
+    if (hasIO && bar) new IntersectionObserver(([e]) => document.body.classList.toggle('past-bar', !e.isIntersecting)).observe(bar);
+  } else if (menuBtn) { menuBtn.hidden = true; }
+
+  /* ---------- 9. Apparition des éléments, en cascade ---------- */
   if (hasIO) {
     const io = new IntersectionObserver(entries => {
       const batch = entries.filter(e => e.isIntersecting);
