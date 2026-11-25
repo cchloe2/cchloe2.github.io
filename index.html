@@ -37,6 +37,29 @@
     <a class="btn btn--small" href="assets/CV_Chloe_Chabbert.pdf" download>CV PDF</a>
   </header>
 
+  <button type="button" class="menu-btn" id="menu-btn" aria-haspopup="dialog" aria-controls="drawer"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg><span>Menu</span></button>
+  <dialog class="drawer" id="drawer" aria-label="Menu du site">
+    <div class="drawer__top">
+      <p class="drawer__mark">Chloé Chabbert</p>
+      <button type="button" class="drawer__close" data-close aria-label="Fermer le menu"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg></button>
+    </div>
+    <nav class="drawer__nav" aria-label="Menu du site">
+      <a href="#top">Accueil</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#projets">Projets</a>
+      <a href="#competences">Compétences</a>
+      <a href="#atelier">Atelier</a>
+      <a href="#voyages">Voyages</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="drawer__foot">
+      <a class="btn" href="assets/CV_Chloe_Chabbert.pdf" download>Télécharger mon CV</a>
+      <p><a href="mailto:chloecha14@gmail.com">chloecha14@gmail.com</a></p>
+      <p><a href="https://www.linkedin.com/in/chloechabbert/" target="_blank" rel="noopener">LinkedIn</a> · <a href="en.html" hreflang="en" lang="en">English version</a></p>
+    </div>
+  </dialog>
+
+
   <div class="split">
     <main class="read" id="top">
 
@@ -491,28 +514,12 @@
 
   <!-- ============ 5. Pied de page ============ -->
   <footer class="foot">
-    <div class="foot__photo">
-      <img src="assets/tahiti.jpg" width="800" height="528" alt="" loading="lazy">
-    </div>
-    <div class="foot__menu">
+    <div class="foot__id">
       <p class="foot__mark">Chloé Chabbert</p>
-      <nav aria-label="Pied de page">
-        <a href="#top">Accueil</a>
-        <a href="#parcours">Parcours</a>
-        <a href="#projets">Projets</a>
-        <a href="#competences">Compétences</a>
-        <a href="#atelier">Atelier</a>
-        <a href="#voyages">Voyages</a>
-        <a href="#contact">Contact</a>
-        <a href="assets/CV_Chloe_Chabbert.pdf" download>CV en PDF</a>
-        <a href="en.html" hreflang="en" lang="en">English version</a>
-      </nav>
-      <div class="foot__blocks">
-        <p>Data analyst et ingénieure BI<br>Web designer et graphiste</p>
-        <p><a href="mailto:chloecha14@gmail.com">chloecha14@gmail.com</a><br><a href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a></p>
-      </div>
-      <p class="foot__legal">© 2026 Chloé Chabbert. Photographies : <a href="https://commons.wikimedia.org/w/index.php?curid=8663462">Phillip Maiwald, Bordeaux (CC BY-SA 3.0)</a>, via Wikimedia Commons, passées en bichromie.</p>
+      <p>Data analyst et ingénieure BI · Web designer et graphiste</p>
     </div>
+    <p class="foot__links"><a href="mailto:chloecha14@gmail.com">chloecha14@gmail.com</a><a href="https://www.linkedin.com/in/chloechabbert/" target="_blank" rel="noopener">LinkedIn</a><a href="en.html" hreflang="en" lang="en">English version</a><a href="#top">Haut de page ↑</a></p>
+    <p class="foot__legal">© 2026 Chloé Chabbert. Photographies : <a href="https://commons.wikimedia.org/w/index.php?curid=8663462">Phillip Maiwald, Bordeaux (CC BY-SA 3.0)</a>, via Wikimedia Commons, passées en bichromie.</p>
   </footer>
 
   <!-- Filtre flottant, visible après l'accueil -->
